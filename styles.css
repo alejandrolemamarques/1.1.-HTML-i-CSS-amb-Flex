@@ -1,9 +1,15 @@
+/*------------------------------------*\
+  #RESET
+\*------------------------------------*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/*------------------------------------*\
+  #ROOT ELEMENTS
+\*------------------------------------*/
 body {
     font-family: serif;
     padding: 5px;
@@ -12,18 +18,15 @@ body {
     gap: 1rem;
 }
 
-aside {
-    background-color: #f63f51;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
+/*------------------------------------*\
+  #LAYOUT CONTAINERS
+\*------------------------------------*/
 .black-container {
     background-color: black;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 1rem;
 }
 
 main.black-container {
@@ -32,26 +35,48 @@ main.black-container {
     gap: 1rem;
 }
 
+aside {
+    background-color: #f63f51;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
 .header {
     background-color: #2c4059;
     color: black;
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    padding: 1rem;
 }
 
+/* Header Components */
 .header__logo,
 .header__nav,
 .header__social {
     background-color: #ea5455;
+    padding: 0.5em;
 }
 
 .header__logo {
     flex-grow: 1;
     cursor: pointer;
-    background-color: #ea5455;
 }
 
+.header__nav {
+    flex-grow: 5;
+}
+
+.header__social {
+    flex-grow: 1;
+}
+
+/* Header Animations */
 .header__logo:hover {
     animation: scaleUp 0.3s ease-in forwards;
 }
@@ -74,28 +99,29 @@ main.black-container {
     }
 }
 
-.header__nav {
-    flex-grow: 5;
-}
-
-.header__social {
-    flex-grow: 1;
-}
-
+/*------------------------------------*\
+  #BANNER
+\*------------------------------------*/
 .banner {
     background-color: #ff8b00;
+    padding: 1rem;
 }
 
 .banner__title {
     background-color: #fed700;
     font-size: 1.5rem;
+    padding: 0.5em;
 }
 
+/*------------------------------------*\
+  #ARTICLES
+\*------------------------------------*/
 .articles {
     background-color: #4d4e6a;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 1rem;
 }
 
 .articles__list {
@@ -106,39 +132,34 @@ main.black-container {
 
 .articles__item {
     background-color: #1f6cb0;
+    padding: 0.5em;
 }
 
 .articles__navigation {
     background-color: #71a3c4;
-}
-
-.sidebar__ad {
-    background-color: #fed700;
-}
-
-.footer__content {
-    background-color: #f0e78c;
-}
-
-.header__logo,
-.header__nav,
-.header__social,
-.banner__title,
-.articles__item,
-.articles__navigation,
-.sidebar__ad,
-.footer__content {
     padding: 0.5em;
 }
 
-header,
-aside,
-.black-container,
-.articles,
-.banner {
-    padding: 1rem;
+/*------------------------------------*\
+  #SIDEBAR
+\*------------------------------------*/
+.sidebar__ad {
+    background-color: #fed700;
+    padding: 0.5em;
 }
 
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+.footer__content {
+    background-color: #f0e78c;
+    padding: 0.5em;
+}
+
+/*------------------------------------*\
+  #MEDIA QUERIES
+\*------------------------------------*/
+/* Tablet */
 @media only screen and (max-width: 768px) {
     body {
         background-color: #94d9f7;
@@ -154,6 +175,7 @@ aside,
     }
 }
 
+/* Mobile */
 @media only screen and (max-width: 576px) {
     body {
         background-color: #2ebbf7;
