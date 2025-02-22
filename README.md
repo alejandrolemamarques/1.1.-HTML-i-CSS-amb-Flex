@@ -26,7 +26,7 @@ This project implements a responsive layout using HTML and CSS with Flexbox as p
 
 1. Clone this repository:
     ```sh
-    git clone https://github.com/alejandrolemamarques/alejandrolemamarques-1.1.-HTML-i-CSS-amb-Flex.git
+    git clone https://github.com/alejandrolemamarques/1.1.-HTML-i-CSS-amb-Flex.git
     ```
 2. Navigate to the project directory:
     ```sh
