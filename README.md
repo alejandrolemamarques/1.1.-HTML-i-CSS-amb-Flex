@@ -1,4 +1,4 @@
-# 1.1-HTML-CSS-Flex-Level1
+# 1.1. HTML and CSS with Flex
 
 ## 📄 Description - Task Statement
 
